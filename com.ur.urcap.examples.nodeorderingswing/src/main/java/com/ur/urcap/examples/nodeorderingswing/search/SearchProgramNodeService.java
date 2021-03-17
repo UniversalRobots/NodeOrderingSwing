@@ -29,7 +29,7 @@ public class SearchProgramNodeService implements SwingProgramNodeService<SearchP
 
 	@Override
 	public String getTitle(Locale locale) {
-		return "Search Swing";
+		return "Search";
 	}
 
 	@Override

@@ -29,7 +29,7 @@ public class CloseProgramNodeService implements SwingProgramNodeService<ClosePro
 
 	@Override
 	public String getTitle(Locale locale) {
-		return "Close Swing";
+		return "Close";
 	}
 
 	@Override

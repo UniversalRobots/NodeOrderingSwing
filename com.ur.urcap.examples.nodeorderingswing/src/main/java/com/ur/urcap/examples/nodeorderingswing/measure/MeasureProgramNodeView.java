@@ -13,41 +13,41 @@ import java.awt.Dimension;
 
 public class MeasureProgramNodeView implements SwingProgramNodeView<MeasureProgramNodeContribution> {
 
-    private static final String SORT_ORDER_ID = "Display Order Id";
-    private JLabel orderIdTitle;
-    private JLabel orderIdValue;
+	private static final String SORT_ORDER_ID = "Display Order Id";
+	private JLabel orderIdTitle;
+	private JLabel orderIdValue;
 
-    private final Style style;
+	private final Style style;
 
-    MeasureProgramNodeView(Style style) {
-        this.style = style;
-    }
+	MeasureProgramNodeView(Style style) {
+		this.style = style;
+	}
 
 	@Override
-    public void buildUI(JPanel jPanel, final ContributionProvider<MeasureProgramNodeContribution> provider) {
-        jPanel.setLayout(new BoxLayout(jPanel, BoxLayout.Y_AXIS));
-        jPanel.add(createPreview());
-    }
+	public void buildUI(JPanel jPanel, final ContributionProvider<MeasureProgramNodeContribution> provider) {
+		jPanel.setLayout(new BoxLayout(jPanel, BoxLayout.Y_AXIS));
+		jPanel.add(createPreview());
+	}
 
-    private Box createPreview() {
-        Box previewBox = Box.createHorizontalBox();
-        previewBox.setAlignmentX(Component.LEFT_ALIGNMENT);
-        orderIdTitle = new JLabel(SORT_ORDER_ID);
-        previewBox.add(orderIdTitle);
+	private Box createPreview() {
+		Box previewBox = Box.createHorizontalBox();
+		previewBox.setAlignmentX(Component.LEFT_ALIGNMENT);
+		orderIdTitle = new JLabel(SORT_ORDER_ID);
+		previewBox.add(orderIdTitle);
 
-        previewBox.add(createHorizontalSpacing());
+		previewBox.add(createHorizontalSpacing());
 
-        orderIdValue = new JLabel();
-        previewBox.add(orderIdValue);
+		orderIdValue = new JLabel();
+		previewBox.add(orderIdValue);
 
-        return previewBox;
-    }
+		return previewBox;
+	}
 
-    private Component createHorizontalSpacing() {
-        return Box.createRigidArea(new Dimension(style.getHorizontalSpacing(), 0));
-    }
+	private Component createHorizontalSpacing() {
+		return Box.createRigidArea(new Dimension(style.getHorizontalSpacing(), 0));
+	}
 
-    public void setNodeOrderId(double orderId) {
-        orderIdValue.setText(Double.toString(orderId));
-    }
+	public void setNodeOrderId(double orderId) {
+		orderIdValue.setText(Double.toString(orderId));
+	}
 }

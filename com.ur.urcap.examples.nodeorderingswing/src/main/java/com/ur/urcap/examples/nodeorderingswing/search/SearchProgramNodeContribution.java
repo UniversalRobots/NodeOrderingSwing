@@ -22,7 +22,7 @@ public class SearchProgramNodeContribution implements ProgramNodeContribution {
 
 	@Override
 	public String getTitle() {
-		return "Search Swing";
+		return "Search";
 	}
 
 	@Override

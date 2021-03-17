@@ -22,7 +22,7 @@ public class ZeroProgramNodeContribution implements ProgramNodeContribution {
 
 	@Override
 	public String getTitle() {
-		return "Zero Swing";
+		return "Zero";
 	}
 
 	@Override

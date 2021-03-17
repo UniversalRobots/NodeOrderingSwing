@@ -22,7 +22,7 @@ public class OpenProgramNodeContribution implements ProgramNodeContribution {
 
 	@Override
 	public String getTitle() {
-		return "Open Swing";
+		return "Open";
 	}
 
 	@Override

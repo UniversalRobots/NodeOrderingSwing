@@ -22,7 +22,7 @@ public class CloseProgramNodeContribution implements ProgramNodeContribution {
 
 	@Override
 	public String getTitle() {
-		return "Close Swing";
+		return "Close";
 	}
 
 	@Override

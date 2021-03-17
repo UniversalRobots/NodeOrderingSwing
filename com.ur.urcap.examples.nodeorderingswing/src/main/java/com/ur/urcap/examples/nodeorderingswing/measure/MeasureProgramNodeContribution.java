@@ -22,7 +22,7 @@ public class MeasureProgramNodeContribution implements ProgramNodeContribution {
 
 	@Override
 	public String getTitle() {
-		return "Measure Swing";
+		return "Measure";
 	}
 
 	@Override

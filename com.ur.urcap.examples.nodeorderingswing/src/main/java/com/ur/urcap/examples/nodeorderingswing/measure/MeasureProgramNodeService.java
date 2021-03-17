@@ -29,7 +29,7 @@ public class MeasureProgramNodeService implements SwingProgramNodeService<Measur
 
 	@Override
 	public String getTitle(Locale locale) {
-		return "Measure Swing";
+		return "Measure";
 	}
 
 	@Override

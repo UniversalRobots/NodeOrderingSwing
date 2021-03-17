@@ -29,7 +29,7 @@ public class ZeroProgramNodeService implements SwingProgramNodeService<ZeroProgr
 
 	@Override
 	public String getTitle(Locale locale) {
-		return "Zero Swing";
+		return "Zero";
 	}
 
 	@Override

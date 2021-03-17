@@ -29,7 +29,7 @@ public class DetectProgramNodeService implements SwingProgramNodeService<DetectP
 
 	@Override
 	public String getTitle(Locale locale) {
-		return "Detect Swing";
+		return "Detect";
 	}
 
 	@Override

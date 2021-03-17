@@ -22,7 +22,7 @@ public class DetectProgramNodeContribution implements ProgramNodeContribution {
 
 	@Override
 	public String getTitle() {
-		return "Detect Swing";
+		return "Detect";
 	}
 
 	@Override

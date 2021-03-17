@@ -29,7 +29,7 @@ public class OpenProgramNodeService implements SwingProgramNodeService<OpenProgr
 
 	@Override
 	public String getTitle(Locale locale) {
-		return "Open Swing";
+		return "Open";
 	}
 
 	@Override
